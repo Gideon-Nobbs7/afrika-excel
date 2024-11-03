@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events - AFRI KAN-EXCEL RENAISSANCE FOUNDATION</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="/src/css/styles.css" rel="stylesheet">
+  <style>
+    /* Event Card Hover Overlay */
+    .event-card {
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      background-color: white; /* Maintain the original white background */
+    }
+
+    .event-card:hover {
+      transform: scale(1.05); /* Slight zoom on hover */
+    }
+
+    .event-card .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 0, 0, 0.5); /* Red overlay with 50% opacity */
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .event-card:hover .overlay {
+      opacity: 1;
+    }
+
+    .event-content {
+      position: relative;
+      z-index: 1;
+    }
+
+  </style>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+        <div class="logo-square">
+            <img src="/assets/img1.jpg" class="logo-img">
+        </div>
+        <div class="logo-text">
+            <h1>AFRI KAN-EXCEL</h1>
+            <h1>RENAISSANCE FOUNDATION</h1>
+        </div>
+    </div>
+    <nav>
+        <a href="/src/html/join-us.html"><button id="joinBtn">Join Us</button></a>
+        <a href="/src/html/try-events.html"><button id="eventsBtn">Events</button></a>
+        <button id="menuBtn">Menu</button>
+    </nav>
+    <div class="slide-nav">
+        <div class="nav-content">
+            <ul class="nav-list">
+                <span class="menu-close">X</span>
+                <li><a href="/intro.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-trigger">About Us <span class="arrow">▼</span></a>
+                    <ul class="submenu">
+                        <li><a href="/src/html/about-us.html">Our Story</a></li>
+                        <li><a href="/src/html/teams.html">Team</a></li>
+                        <li><a href="#">Mission</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="menu-overlay"></div>
+  </header>
+
+  <!-- Event Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Event Card with Overlay Effect -->
+      <div class="event-card rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+        <img src="/assets/img2.jpg" alt="Event 1 Image" class="w-full h-30 object-cover rounded-t-lg mb-4">
+        <div class="overlay"></div> <!-- Red Overlay -->
+        <div class="event-content">
+          <h1 class="text-2xl font-semibold text-gray-700 mb-2">Global Rhythms Ensemble</h1>
+          <p class="text-gray-700 mb-4">
+            Join us for an evening of vibrant African rhythms and music. Enjoy live performances showcasing the talent of African artists.
+          </p>
+          <p class="text-gray-600 font-semibold mb-2">
+            <i class="fas fa-calendar-alt mr-2"></i> Date: November 15, 2024
+          </p>
+          <p class="text-gray-600 mb-4">
+            <i class="fas fa-clock mr-2"></i> Time: 7:00 PM
+          </p>
+          <p class="text-gray-600 mb-4">
+            <i class="fas fa-map-marker-alt mr-2"></i> Location: AFRI KAN-EXCEL Hall, City Center
+          </p>
+          <a href="/src/html/event-page.html">
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition duration-300">Learn More</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Additional Event Card -->
+      <div class="event-card rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+        <img src="/assets/img3.jpg" alt="Event 2 Image" class="w-full h-30 object-cover rounded-t-lg mb-4">
+        <div class="overlay"></div> <!-- Red Overlay -->
+        <div class="event-content">
+          <h1 class="text-2xl font-semibold text-gray-900 mb-2">Cultural Film Festival</h1>
+          <p class="text-gray-700 mb-4">
+            Experience African culture through a selection of award-winning films. This festival offers a diverse lineup celebrating African stories.
+          </p>
+          <p class="text-gray-600 font-semibold mb-2">
+            <i class="fas fa-calendar-alt mr-2"></i> Date: November 15, 2024
+          </p>
+          <p class="text-gray-600 mb-4">
+            <i class="fas fa-clock mr-2"></i> Time: 7:00 PM
+          </p>
+          <p class="text-gray-600 mb-4">
+            <i class="fas fa-map-marker-alt mr-2"></i> Location: AFRI KAN-EXCEL Hall, City Center
+          </p>
+          <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition duration-300">Learn More</button>
+        </div>
+      </div>
+
+      <!-- Event Card -->
+      <div class="event-card rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+        <img src="/assets/img4.jpg" alt="Event 2 Image" class="w-full h-35 object-cover rounded-t-lg mb-4">
+        <div class="overlay"></div> <!-- Red Overlay -->
+        <div class="event-content">
+          <h1 class="text-2xl font-semibold text-gray-900 mb-2">Cultural Film Festival</h1>
+          <p class="text-gray-700 mb-4">
+            Experience African culture through a selection of award-winning films. This festival offers a diverse lineup celebrating African stories.
+          </p>
+          <p class="text-gray-600 font-semibold mb-2">
+            <i class="fas fa-calendar-alt mr-2"></i> Date: November 15, 2024
+          </p>
+          <p class="text-gray-600 mb-4">
+            <i class="fas fa-clock mr-2"></i> Time: 7:00 PM
+          </p>
+          <p class="text-gray-600 mb-4">
+            <i class="fas fa-map-marker-alt mr-2"></i> Location: AFRI KAN-EXCEL Hall, City Center
+          </p>
+          <button class="bg-yellow-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition duration-300">Learn More</button>
+        </div>
+      </div>
+      
+
+    </div>
+  </section>
+
+    <div class="site-footer">
+        <div class="footer-content">
+        <div class="newsletter-signup">
+            <h3>Sign up for our newsletter</h3>
+            <form>
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Last name">
+            <input type="email" placeholder="Email">
+            <button type="submit">SEND</button>
+            </form>
+        </div>
+        
+        <div class="helpful-links">
+            <h3>Helpful Links</h3>
+            <ul>
+            <li><a href="#">Search</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Our Opening Times</a></li>
+            <li><a href="#">Log in</a></li>
+            <li><a href="#">Basket: (0 items)</a></li>
+            </ul>
+        </div>
+        
+        <div class="find-us">
+            <h3>Find Us</h3>
+            <p>Address:<br>
+            66 - 68 Great Suffolk St,<br>
+            London<br>
+            SE1 0BL</p>
+            <p>Email: info@africacentre.org.uk</p>
+            <p>Phone: +44 (0) 208 004 6436</p>
+        </div>
+        
+        <div class="follow-us">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+            <a href="#" class="facebook">Facebook</a>
+            <a href="#" class="twitter">Twitter</a>
+            <a href="#" class="instagram">Instagram</a>
+            <a href="#" class="linkedin">LinkedIn</a>
+            <a href="#" class="youtube">YouTube</a>
+            </div>
+            <p>The Africa Centre is a UK charity registered under number 313510.</p>
+        </div>
+        </div>
+        
+        <!-- <div class="sponsors">
+        <img src="african-arts-trust-logo.png" alt="The African Arts Trust">
+        <img src="wolfson-foundation-logo.png" alt="The Wolfson Foundation">
+        <img src="propel-logo.png" alt="Propel">
+        <img src="nandos-logo.png" alt="Nando's">
+        <img src="heritage-fund-logo.png" alt="Heritage Fund">
+        </div> -->
+    </div>
+
+  <script src="/src/js/scripts.js"></script>
+
+</body>
+</html>

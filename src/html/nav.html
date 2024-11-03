@@ -1,0 +1,213 @@
+<nav class="main-nav">
+    <button id="joinBtn">Join Us</button>
+    <button id="eventsBtn">Events</button>
+    <button id="menuBtn">Menu</button>
+</nav>
+
+<!-- Slide-in Navigation -->
+<div class="slide-nav">
+    <div class="nav-content">
+        <ul class="nav-list">
+            <span class="menu-close">X</span>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-trigger">About Us <span class="arrow">▼</span></a>
+                <ul class="submenu">
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Mission</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Overlay -->
+<div class="menu-overlay"></div>
+
+<style>
+/* Main navigation styles */
+.main-nav {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+}
+
+.main-nav button {
+    padding: 8px 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Slide-in navigation */
+.slide-nav {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.slide-nav.open {
+    right: 0;
+}
+
+/* Navigation content */
+.nav-content {
+    padding: 60px 30px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+/* Menu close button */
+.menu-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Navigation list */
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.3s ease;
+}
+
+.slide-nav.open .nav-list li {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Staggered animation for list items */
+.nav-list li:nth-child(1) { transition-delay: 0.1s; }
+.nav-list li:nth-child(2) { transition-delay: 0.2s; }
+.nav-list li:nth-child(3) { transition-delay: 0.3s; }
+.nav-list li:nth-child(4) { transition-delay: 0.4s; }
+.nav-list li:nth-child(5) { transition-delay: 0.5s; }
+.nav-list li:nth-child(6) { transition-delay: 0.5s; }
+
+/* Links styling */
+.nav-list a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: block;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #007bff;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrow {
+    font-size: 0.8em;
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.submenu {
+    display: none;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.dropdown.active .submenu {
+    display: block;
+}
+
+.dropdown.active .arrow {
+    transform: rotate(180deg);
+}
+
+/* Overlay */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const menuBtn = document.getElementById('menuBtn');
+    const slideNav = document.querySelector('.slide-nav');
+    const menuClose = document.querySelector('.menu-close');
+    const overlay = document.querySelector('.menu-overlay');
+    const dropdownTriggers = document.querySelectorAll('.dropdown-trigger');
+
+    // Open menu
+    menuBtn.addEventListener('click', function() {
+        slideNav.classList.add('open');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+
+    // Close menu
+    function closeMenu() {
+        slideNav.classList.remove('open');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    menuClose.addEventListener('click', closeMenu);
+    overlay.addEventListener('click', closeMenu);
+
+    // Handle dropdowns
+    dropdownTriggers.forEach(trigger => {
+        trigger.addEventListener('click', function(e) {
+            e.preventDefault();
+            const dropdown = this.parentElement;
+            dropdown.classList.toggle('active');
+        });
+    });
+
+    // Close menu on escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeMenu();
+        }
+    });
+});
+</script>

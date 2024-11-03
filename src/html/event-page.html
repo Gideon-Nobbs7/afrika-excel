@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Details - AFRI KAN-EXCEL RENAISSANCE FOUNDATION</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+
+  <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <div class="logo-square">
+                <img src="/assets/img1.jpg" class="logo-img">
+            </div>
+            <div class="logo-text">
+                <h1>AFRI KAN-EXCEL</h1>
+                <h1>RENAISSANCE FOUNDATION</h1>
+            </div>
+        </div>
+        <nav>
+            <a href="/src/html/join-us.html"><button id="joinBtn">Join Us</button></a>
+            <a href="/src/html/try-events.html"><button id="eventsBtn">Events</button></a>
+            <button id="menuBtn">Menu</button>
+        </nav>
+        <div class="slide-nav">
+            <div class="nav-content">
+                <ul class="nav-list">
+                    <span class="menu-close">X</span>
+                    <li><a href="/intro.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-trigger">About Us <span class="arrow">▼</span></a>
+                        <ul class="submenu">
+                            <li><a href="/src/html/about-us.html">Our Story</a></li>
+                            <li><a href="/src/html/teams.html">Team</a></li>
+                            <li><a href="#">Mission</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-overlay"></div>
+      </header>
+
+  <!-- Event Details Section -->
+  <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="bg-white rounded-lg shadow-lg p-8">
+      <img src="/assets/img2.jpg" alt="Event Image" class="w-full h-64 object-cover rounded-lg mb-6">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Global Rhythms Ensemble</h2>
+      <p class="text-gray-700 mb-6">
+        Join us for an evening of vibrant African rhythms and music. This event will showcase talented African artists, offering an immersive experience into Africa's diverse musical landscape. Expect an unforgettable night of performances!
+      </p>
+      <p class="text-gray-600 font-semibold mb-2">
+        <i class="fas fa-calendar-alt mr-2"></i> Date: November 15, 2024
+      </p>
+      <p class="text-gray-600 mb-4">
+        <i class="fas fa-clock mr-2"></i> Time: 7:00 PM
+      </p>
+      <p class="text-gray-600 mb-4">
+        <i class="fas fa-map-marker-alt mr-2"></i> Location: AFRI KAN-EXCEL Hall, City Center
+      </p>
+    </div>
+
+    <!-- RSVP Form Section -->
+    <div class="bg-gray-100 rounded-lg shadow-lg p-8 mt-8">
+      <h3 class="text-2xl font-semibold text-gray-900 mb-4">RSVP for this Event</h3>
+      <form action="/submit-rsvp" method="POST">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name</label>
+          <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg" required>
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+          <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg" required>
+        </div>
+        <div class="mb-4">
+          <label for="phone" class="block text-gray-700 font-semibold mb-2">Phone Number</label>
+          <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border rounded-lg">
+        </div>
+        <button type="submit" class="bg-yellow-500 text-white px-6 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition duration-300">
+          Submit RSVP
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <script src="/src/js/scripts.js"></script>
+</body>
+</html>

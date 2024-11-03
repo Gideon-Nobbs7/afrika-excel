@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - AFRI KAN-EXCEL RENAISSANCE FOUNDATION</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">\
+  <link rel="stylesheet" href="/src/css/styles.css">
+  <style>
+    @keyframes slideFromBottom {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .animate-slide {
+      animation: slideFromBottom 0.8s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+  <header>
+    <div class="logo">
+        <div class="logo-square">
+            <img src="/assets/img1.jpg" class="logo-img">
+        </div>
+        <div class="logo-text">
+            <h1>AFRI KAN-EXCEL</h1>
+            <h1>RENAISSANCE FOUNDATION</h1>
+        </div>
+    </div>
+    <nav>
+        <a href="/src/html/join-us.html"><button id="joinBtn">Join Us</button></a>
+        <a href="/src/html/try-events.html"><button id="eventsBtn">Events</button></a>
+        <button id="menuBtn">Menu</button>
+    </nav>
+    <div class="slide-nav">
+        <div class="nav-content">
+            <ul class="nav-list">
+                <span class="menu-close">X</span>
+                <li><a href="/intro.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-trigger">About Us <span class="arrow">▼</span></a>
+                    <ul class="submenu">
+                        <li><a href="/src/html/about-us.html">Our Story</a></li>
+                        <li><a href="/src/html/teams.html">Team</a></li>
+                        <li><a href="#">Mission</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="menu-overlay"></div>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="relative bg-yellow-500 h-96">
+    <div class="absolute inset-0">
+      <img src="/assets/img1.jpg" alt="African Pattern Background" class="w-full h-full object-cover opacity-20"/>
+    </div>
+    <div class="relative max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
+      <h1 class="text-5xl font-bold text-gray-900 text-center mb-6">About AFRI KAN-EXCEL</h1>
+      <p class="text-xl text-gray-800 text-center max-w-3xl mx-auto">
+        Empowering African Excellence Through Renaissance and Innovation
+      </p>
+    </div>
+  </div>
+
+  <!-- Mission Statement -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-20">
+    <div class="bg-white rounded-lg shadow-xl p-8 animate-slide">
+      <h2 class="text-3xl font-semibold text-gray-900 mb-6 text-center">Our Mission</h2>
+      <p class="text-lg text-gray-700 text-center max-w-4xl mx-auto">
+        To catalyze Africa's renaissance by nurturing talent, fostering innovation, and building bridges between local intellectual capital and global opportunities. We are committed to empowering the next generation of African leaders, innovators, and changemakers.
+      </p>
+    </div>
+  </div>
+
+  <!-- Values Section -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div class="h-12 w-12 bg-yellow-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+          <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2 text-center">Innovation</h3>
+        <p class="text-gray-600 text-center">
+          Embracing creative solutions and cutting-edge approaches to address Africa's challenges and opportunities.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div class="h-12 w-12 bg-green-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+          <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2 text-center">Excellence</h3>
+        <p class="text-gray-600 text-center">
+          Maintaining the highest standards in everything we do, from program delivery to community engagement.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div class="h-12 w-12 bg-red-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+          <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2 text-center">Community</h3>
+        <p class="text-gray-600 text-center">
+          Building strong networks and fostering collaboration across the African continent and beyond.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Impact Section -->
+  <div class="bg-gray-900 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-semibold text-white mb-12 text-center">Our Impact</h2>
+      <div class="grid md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="text-4xl font-bold text-yellow-500 mb-2 counter" data-target="1000">0</div>
+          <div class="text-white">Talents Supported</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-yellow-500 mb-2 counter" data-target="25">0</div>
+          <div class="text-white">African Countries</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-yellow-500 mb-2 counter" data-target="50000000">0</div>
+          <div class="text-white">Investment Generated</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-yellow-500 mb-2 counter" data-target="100">0</div>
+          <div class="text-white">Partner Organizations</div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Vision Section -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="bg-white rounded-lg shadow-xl p-8">
+      <h2 class="text-3xl font-semibold text-gray-900 mb-6 text-center">Our Vision</h2>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <img src="/assets/img3.jpg" alt="Vision Image" class="rounded-lg shadow-md"/>
+        </div>
+        <div class="flex flex-col justify-center">
+          <p class="text-lg text-gray-700 mb-6">
+            We envision an Africa that leads global innovation and economic growth, powered by its extraordinary talent and rich cultural heritage. Through AFRIK-DIAMOND VALLEY and our other initiatives, we're creating opportunities for African excellence to shine on the world stage.
+          </p>
+          <p class="text-lg text-gray-700">
+            Our foundation serves as a catalyst for transformation, connecting African talent with resources, mentorship, and opportunities that enable them to create lasting positive impact in their communities and beyond.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Call to Action -->
+  <div class="bg-yellow-500 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Join Our Mission</h2>
+      <p class="text-xl text-gray-800 mb-8 max-w-3xl mx-auto">
+        Be part of Africa's renaissance story. Whether you're a talent, partner, or supporter, there's a place for you in our community.
+      </p>
+      <button class="bg-gray-900 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-800 transition-colors duration-300">
+        Get Involved
+      </button>
+    </div>
+  </div>
+
+  <div class="site-footer">
+    <div class="footer-content">
+    <div class="newsletter-signup">
+        <h3>Sign up for our newsletter</h3>
+        <form>
+        <input type="text" placeholder="First name">
+        <input type="text" placeholder="Last name">
+        <input type="email" placeholder="Email">
+        <button type="submit">SEND</button>
+        </form>
+    </div>
+    
+    <div class="helpful-links">
+        <h3>Helpful Links</h3>
+        <ul>
+        <li><a href="#">Search</a></li>
+        <li><a href="#">Sitemap</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Our Opening Times</a></li>
+        <li><a href="#">Log in</a></li>
+        <li><a href="#">Basket: (0 items)</a></li>
+        </ul>
+    </div>
+    
+    <div class="find-us">
+        <h3>Find Us</h3>
+        <p>Address:<br>
+        66 - 68 Great Suffolk St,<br>
+        London<br>
+        SE1 0BL</p>
+        <p>Email: info@africacentre.org.uk</p>
+        <p>Phone: +44 (0) 208 004 6436</p>
+    </div>
+    
+    <div class="follow-us">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+        <a href="#" class="facebook">Facebook</a>
+        <a href="#" class="twitter">Twitter</a>
+        <a href="#" class="instagram">Instagram</a>
+        <a href="#" class="linkedin">LinkedIn</a>
+        <a href="#" class="youtube">YouTube</a>
+        </div>
+        <p>The Africa Centre is a UK charity registered under number 313510.</p>
+    </div>
+    </div>
+    
+    <!-- <div class="sponsors">
+    <img src="african-arts-trust-logo.png" alt="The African Arts Trust">
+    <img src="wolfson-foundation-logo.png" alt="The Wolfson Foundation">
+    <img src="propel-logo.png" alt="Propel">
+    <img src="nandos-logo.png" alt="Nando's">
+    <img src="heritage-fund-logo.png" alt="Heritage Fund">
+    </div> -->
+</div>
+
+  <script src="/src/js/scripts.js"></script>
+  <script src="/src/js/about-us.js"></script>
+</body>
+</html>

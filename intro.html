@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFRI KAN-EXCEL</title>
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-square">
+                <img src="/assets/img1.jpg" class="logo-img">
+            </div>
+            <div class="logo-text">
+                <h1>AFRI KAN-EXCEL</h1>
+                <h1>RENAISSANCE FOUNDATION</h1>
+            </div>
+        </div>
+        <nav>
+            <a href="/src/html/join-us.html"><button id="joinBtn">Join Us</button></a>
+            <a href="/src/html/try-events.html"><button id="eventsBtn">Events</button></a>
+            <button id="menuBtn">Menu</button>
+        </nav>
+        <div class="slide-nav">
+            <div class="nav-content">
+                <ul class="nav-list">
+                    <span class="menu-close">X</span>
+                    <li><a href="/intro.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-trigger">About Us <span class="arrow">▼</span></a>
+                        <ul class="submenu">
+                            <li><a href="/src/html/about-us.html">Our Story</a></li>
+                            <li><a href="/src/html/teams.html">Team</a></li>
+                            <li><a href="#">Mission</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-overlay"></div>
+      </header>
+
+    <main>
+        <div class="carousel-wrapper">
+            <button class="carousel-button prev">&#x2190;</button>
+            <div class="carousel">
+                <div class="event-container">
+                    <img src="/assets/img1.jpg" class="image-bg">
+                        <div class="image-container">
+                        </div>
+                    </div>
+                            <h2>Cultural Film Festival</h2>
+                            <p>
+                                Explore diverse cultures through cinema at our annual film festival. 
+                                Featuring award-winning international films and director Q&As. 
+                                Tickets available online or at the door.
+                            </p>
+                            <p class="event-date">December 5-7, 2024 | Various Times</p>
+                            </a>
+                    
+                </div>
+            </div>
+            <button class="carousel-button next">&#x2192;</button>
+        </div>
+    </main>
+
+    <section class="advocating-section">
+        <div class="advocating-content">
+          <strong>Educating and Advocating for Africa</strong>
+          <div class="orange-bar"></div>
+        </div>
+    
+        <div class="card-container">
+            <div class="card">
+                <img src="image1.jpg" alt="Our Story">
+                <div class="card-content">
+                    <h2>Our Story</h2>
+                    <p>Originally conceived to foster non-governmental relations between newly independent Africa and Britain...</p>
+                </div>
+            </div>
+      
+            <div class="card">
+                <img src="image2.jpg" alt="Our Spaces">
+                <div class="card-content">
+                    <h2>Our Spaces</h2>
+                    <p>The Africa Centre is a home from home and offers welcoming and exciting spaces...</p>
+                </div>
+            </div>
+      
+        <!-- Add more cards similarly -->
+        </div>
+    </section>
+    
+    <section class="testimonial-section">
+        <h2>Testimonials</h2>
+  
+        <!-- Testimonial content with unique IDs -->
+        <div id="testimonial-1" class="testimonial-content active-testimonial">
+            <blockquote>
+            "Collaboration with The Africa Centre has been really wonderful. Empowering young people, meeting inspirational people, building our school community, and taking steps to decolonise the curriculum."
+            </blockquote>
+            <p class="author">Emily Segal</p>
+            <p class="author-details">Teacher, Haberdasher Aske's Secondary School</p>
+        </div>
+  
+        <div id="testimonial-2" class="testimonial-content">
+            <blockquote>
+            "The Africa Centre brings Africa closer to the people, supporting various initiatives and creating impactful changes within our communities."
+            </blockquote>
+            <p class="author">John Doe</p>
+            <p class="author-details">Philanthropist, Community Leader</p>
+        </div>
+
+        <div id="testimonial-3" class="testimonial-content">
+            <blockquote>
+            "The T3 Africa Centre brings Africa closer to the people, supporting various initiatives and creating impactful changes within our communities."
+            </blockquote>
+            <p class="author">John Doe</p>
+            <p class="author-details">Philanthropist, Community Leader</p>
+        </div>
+
+        <div id="testimonial-4" class="testimonial-content">
+            <blockquote>
+            "The T4 Africa Centre brings Africa closer to the people, supporting various initiatives and creating impactful changes within our communities."
+            </blockquote>
+            <p class="author">John Doe</p>
+            <p class="author-details">Philanthropist, Community Leader</p>
+        </div>
+  
+  <!-- Pagination dots -->  
+        <div class="pagination">
+            <span class="dot active" onclick="showTestimonial(1)"></span>
+            <span class="dot" onclick="showTestimonial(2)"></span>
+            <span class="dot" onclick="showTestimonial(3)"></span>
+            <span class="dot" onclick="showTestimonial(4)"></span>
+        </div>
+
+    </section>
+
+
+    <div class="site-footer">
+        <div class="footer-content">
+          <div class="newsletter-signup">
+            <h3>Sign up for our newsletter</h3>
+            <form>
+              <input type="text" placeholder="First name">
+              <input type="text" placeholder="Last name">
+              <input type="email" placeholder="Email">
+              <button type="submit">SEND</button>
+            </form>
+          </div>
+          
+          <div class="helpful-links">
+            <h3>Helpful Links</h3>
+            <ul>
+              <li><a href="#">Search</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Our Opening Times</a></li>
+              <li><a href="#">Log in</a></li>
+              <li><a href="#">Basket: (0 items)</a></li>
+            </ul>
+          </div>
+          
+          <div class="find-us">
+            <h3>Find Us</h3>
+            <p>Address:<br>
+               66 - 68 Great Suffolk St,<br>
+               London<br>
+               SE1 0BL</p>
+            <p>Email: info@africacentre.org.uk</p>
+            <p>Phone: +44 (0) 208 004 6436</p>
+          </div>
+          
+          <div class="follow-us">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#" class="facebook">Facebook</a>
+              <a href="#" class="twitter">Twitter</a>
+              <a href="#" class="instagram">Instagram</a>
+              <a href="#" class="linkedin">LinkedIn</a>
+              <a href="#" class="youtube">YouTube</a>
+            </div>
+            <p>The Africa Centre is a UK charity registered under number 313510.</p>
+          </div>
+        </div>
+        
+        <!-- <div class="sponsors">
+          <img src="african-arts-trust-logo.png" alt="The African Arts Trust">
+          <img src="wolfson-foundation-logo.png" alt="The Wolfson Foundation">
+          <img src="propel-logo.png" alt="Propel">
+          <img src="nandos-logo.png" alt="Nando's">
+          <img src="heritage-fund-logo.png" alt="Heritage Fund">
+        </div> -->
+    </div>
+
+    <script src="/src/js/scripts.js"></script>
+</body>
+
+</html>

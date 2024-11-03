@@ -1,0 +1,61 @@
+body {
+    font-family: famba, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #292b2c;
+}
+
+
+.headerText {
+  padding-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.breadcrumbWrapper {
+  width: 100%;
+  max-width: 900px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+::before, ::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+
+.breadcrumbList {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.breadcrumbItem {
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  margin-right: .5em;
+}
+
+
+.breadcrumbItem::before {
+  content: '\f054';
+  font-family: fontawesome;
+  font-size: .75em;
+  margin-right: .75em;
+  color: #636c72;
+}
